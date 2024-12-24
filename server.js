@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // MongoDB Connection
-const dbURI = process.env.MONGODB_URL;
+const dbURI = "mongodb+srv://kumarayush0926:V9TNMT5743SC9l02@tara.0gmn5.mongodb.net/tara?retryWrites=true&w=majority";
 mongoose.connect(dbURI)
     .then(() => console.log("Connected to MongoDB"))
     .catch(err => console.error("Error connecting to MongoDB:", err));
